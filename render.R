@@ -4,7 +4,7 @@ quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gt
 rmarkdown::render('tbl-cross-reprex-rmd.Rmd', output_file = 'tbl-cross-reprex-rmd-gt-old.html')
 
 # Current version of gt
-devtools::install_version('gt', '0.11.0')
+install.packages('gt')
 reprex::reprex({
   try(quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gt-new.html'))
 })
