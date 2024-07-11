@@ -1,0 +1,25 @@
+[31m
+
+processing file: tbl-cross-reprex-md.qmd
+[39m  |                                                            |                                                    |   0%  |                                                            |.................                                   |  33%                    |                                                            |...................................                 |  67% [unnamed-chunk-1][31mError in `vapply()`:
+! values must be length 1,
+ but FUN(X[[1]]) result is length 0
+Backtrace:
+  1. global .main()
+  2. execute(...)
+  3. rmarkdown::render(...)
+  4. knitr::knit(knit_input, knit_output, envir = envir, quiet = quiet)
+  5. knitr:::process_file(text, output)
+     ...
+ 30. gt:::dt_boxhead_build(data = data, context = context)
+ 31. base::lapply(...)
+ 32. gt (local) FUN(X[[i]], ...)
+ 33. gt:::process_text(label, context)
+ 34. base::vapply(...)
+[39m[31m
+
+
+Quitting from lines 11-16 [unnamed-chunk-1] (tbl-cross-reprex-md.qmd)
+[39m                                                                                                            
+[31mExecution halted
+[39m
