@@ -1,0 +1,13 @@
+---
+title: "tbl_cross reprex"
+output: html_document
+---
+
+```{r}
+library(gtsummary)
+# Example 1 ----------------------------------
+trial |>
+  tbl_cross(row = trt, col = response) |>
+  bold_labels()
+packageVersion('gt')
+```
