@@ -10,4 +10,5 @@ trial |>
   tbl_cross(row = trt, col = response) |>
   bold_labels()
 packageVersion('gt')
+quarto::quarto_version()
 ```
