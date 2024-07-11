@@ -9,3 +9,8 @@ reprex::reprex({
   try(quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gt-new.html'))
 })
 rmarkdown::render('tbl-cross-reprex-rmd.Rmd', output_file = 'tbl-cross-reprex-rmd-gt-new.html')
+
+# Current gt and pre-release Quarto
+quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gt-new-quarto-pre.html')
+quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gt-new-quarto-pre.docx', output_format = 'docx')
+quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gt-new-quarto-pre.pdf', output_format = 'pdf')
