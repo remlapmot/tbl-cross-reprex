@@ -1,7 +1,8 @@
 # Previous version of gt
-devtools::install_version('gt', '0.10.1')
+devtools::install_version('gt', '0.10.1', repos = "https://cran.rstudio.com/")
 quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gt-old.html')
 rmarkdown::render('tbl-cross-reprex-rmd.Rmd', output_file = 'tbl-cross-reprex-rmd-gt-old.html')
+quarto::quarto_render('tbl-cross-reprex-md.qmd', output_file = 'tbl-cross-reprex-md-gt-old.html')
 
 # Current version of gt
 install.packages('gt')
