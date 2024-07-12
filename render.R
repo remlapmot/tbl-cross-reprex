@@ -16,3 +16,8 @@ try(quarto::quarto_render('tbl-cross-reprex-md.qmd', output_file = 'tbl-cross-re
 quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gt-new-quarto-pre.html')
 quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gt-new-quarto-pre.docx', output_format = 'docx')
 quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gt-new-quarto-pre.pdf', output_format = 'pdf')
+
+# Development gt and current gtsummary
+remotes::install_github("rstudio/gt")
+quarto::quarto_render('tbl-cross-reprex-md.qmd', output_file = 'tbl-cross-reprex-md-gt-devel.html')
+quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gt-devel.html')
