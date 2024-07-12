@@ -28,6 +28,11 @@ remotes::install_github("ddsjoberg/gtsummary@1830-md-fn-update")
 try(quarto::quarto_render('tbl-cross-reprex-md.qmd', output_file = 'tbl-cross-reprex-md-gtsummary-devel.html'))
 quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gtsummary-devel.html')
 
+install.packages('gt')
+remotes::install_github("ddsjoberg/gtsummary#1832")
+try(quarto::quarto_render('tbl-cross-reprex-md.qmd', output_file = 'tbl-cross-reprex-md-gtsummary-devel.html'))
+quarto::quarto_render('tbl-cross-reprex.qmd', output_file = 'tbl-cross-reprex-gtsummary-devel.html')
+
 # Devel gt and gtsummary PR
 remotes::install_github('rstudio/gt')
 remotes::install_github("ddsjoberg/gtsummary@1830-md-fn-update")
